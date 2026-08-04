@@ -1,0 +1,2417 @@
+[
+  {
+    "meeting_id": "6c9fa48f-e760-4ec2-824f-720fa6d0f6ec",
+    "submitted_at": "2026-08-04T17:01:25.764572",
+    "status": "Pending Human Review",
+    "total_items": 30,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "I got it for a birthday which is tonight and now I'm not 100% sure what I need to do",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.7999999999999999,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Okay, what I will do is make arrangements with Karen's boutique for you to exchange the Parker scarves at no additional cost",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.7999999999999999,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "And in addition, I was able to look up your order in our system, and I'm going to send out a special gift to you to make up for the inconvenience",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.7999999999999999,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 3,
+        "task": "Extract specific action items, tasks,",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 4,
+        "task": "commitments from this meeting",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 5,
+        "task": "Focus on who needs to do what",
+        "assignee": "who",
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 6,
+        "task": "The call is now being recorded",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 7,
+        "task": "Parker scarves, how may I help you? I brought a scarf online from my waist",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 8,
+        "task": "it turns out they shipped the wrong color",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 9,
+        "task": "Oh, I am so sorry, sir",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 10,
+        "task": "I got it for a birthday which is tonight",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 11,
+        "task": "now I'm not 100% sure what I need to do",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 12,
+        "task": "Okay, let me see if I can help you",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 13,
+        "task": "Do you have the item number of the Parker scarves? I don't think so",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 14,
+        "task": "It's called a New Yorker, I think",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 15,
+        "task": "What color did you want the New Yorker in? Blue",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 16,
+        "task": "The one that shipped was light blue",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 17,
+        "task": "I wanted it the darker one",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 18,
+        "task": "Did you want navy blue or royal blue? What's the difference there? The royal blue is a bit brighter",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 19,
+        "task": "That's the one I want",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 20,
+        "task": "Okay, what zip code are you located in? 1946",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 21,
+        "task": "Okay, the peers that we do not, or I'm sorry, that we do have that item in stock",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 22,
+        "task": "Okay, Karen's boutique at the Hunter Mall, is that close by? It is, it's right by my office",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 23,
+        "task": "Okay, what is your name, sir? Charlie Johnson",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 24,
+        "task": "Charlie Johnson, is that J",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 25,
+        "task": "Johnson, do you have the Parker scarves in light blue with you now? I do, they shipped it to my office, it just came in not that long ago",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 26,
+        "task": "I'm going to send out a special gift to you to make up for the inconvenience",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 27,
+        "task": "Thank you so much",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 28,
+        "task": "thank you for calling Parker Scarfe,",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 29,
+        "task": "I hope y both both - both both both had both both still both both only both both money both both one both still had both still still both still Both both both \" both both that both both their both bot",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "24a5be60-5fd1-4cb8-b7eb-48e3d5921bc4",
+    "submitted_at": "2026-08-04T17:23:36.302686",
+    "status": "Pending Human Review",
+    "total_items": 10,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Extract specific action items, tasks,",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "commitments from this meeting",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "Focus on who needs to do what",
+        "assignee": "who",
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 3,
+        "task": "Thunderstorms could produce large hail, isolated tornadoes",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 4,
+        "task": "Thunderstorms could also produce heavy rain",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 5,
+        "task": "thunderstorms could cause tornadoes",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 6,
+        "task": "Storms are expected to move west-northwest to west-southwest",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 7,
+        "task": "then east-northeast",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 8,
+        "task": "The storms could produce hail, tornadoes, heavy rain, lightning",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 9,
+        "task": "still still had still both still had both still only both still still still both both still both had both both both - still both - had had still had had both had still still only had still only still ",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "c0c92bee-6beb-4635-8e6b-73c54ea1aede",
+    "submitted_at": "2026-08-04T17:35:34.911214",
+    "status": "Pending Human Review",
+    "total_items": 8,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Extract specific action items, tasks,",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "commitments from this meeting",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "Focus on who needs to do what",
+        "assignee": "who",
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 3,
+        "task": "Summarize this conversation:\n Thunderstorms could produce large hail, isolated tornadoes",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 4,
+        "task": "storms will bring hail, tornadoes, heavy rain",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 5,
+        "task": "Summaries: Storms will produce large Hail, isolated Tornadoes, Heavy Rain",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 6,
+        "task": "Thunderstorms could produce large hail, isolated tornadoes",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 7,
+        "task": "both still had still both still both both \" still both \" both still still both - both both both - still had had still still still had both both had both still \" still still only still both had their b",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "426e7c37-728a-462e-bb6f-b12778decba8",
+    "submitted_at": "2026-08-04T17:40:13.415104",
+    "status": "Pending Human Review",
+    "total_items": 5,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Extract specific action items, tasks,",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "commitments from this meeting",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "Focus on who needs to do what",
+        "assignee": "who",
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 3,
+        "task": "Thunderstorms could produce large hail, isolated tornadoes",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 4,
+        "task": "over only only only still still \" still still still s still had still had \" still had had still still had both still had between between then still not had had had bothte still had their had still not",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "a7f4d513-ed06-4731-be5d-8db40e626f14",
+    "submitted_at": "2026-08-04T17:42:58.805282",
+    "status": "Pending Human Review",
+    "total_items": 29,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "I got it for a birthday which is tonight and now I'm not 100% sure what I need to do",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.7999999999999999,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Okay, what I will do is make arrangements with Karen's boutique for you to exchange the Parker scarves at no additional cost",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.7999999999999999,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "And in addition, I was able to look up your order in our system, and I'm going to send out a special gift to you to make up for the inconvenience",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.7999999999999999,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 3,
+        "task": "Extract specific action items, tasks,",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 4,
+        "task": "commitments from this meeting",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 5,
+        "task": "Focus on who needs to do what",
+        "assignee": "who",
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 6,
+        "task": "I brought a scarf online from my waist",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 7,
+        "task": "it turns out they shipped the wrong color",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 8,
+        "task": "I'm going to send out a special gift to you to make up for the inconvenience",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 9,
+        "task": "I got it for a birthday which is tonight",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 10,
+        "task": "now I'm not 100% sure what I need to do",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 11,
+        "task": "I do, they shipped it to my office, it just came in not that long ago",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 12,
+        "task": "The call is now being recorded",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 13,
+        "task": "Parker scarves, how may I help you? I brought a scarf online from my waist",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 14,
+        "task": "Oh, I am so sorry, sir",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 15,
+        "task": "Okay, let me see if I can help you",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 16,
+        "task": "Do you have the item number of the Parker scarves? I don't think so",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 17,
+        "task": "It's called a New Yorker, I think",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 18,
+        "task": "What color did you want the New Yorker in? Blue",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 19,
+        "task": "The one that shipped was light blue",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 20,
+        "task": "I wanted it the darker one",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 21,
+        "task": "Did you want navy blue or royal blue? What's the difference there? The royal blue is a bit brighter",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 22,
+        "task": "That's the one I want",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 23,
+        "task": "Okay, what zip code are you located in? 1946",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 24,
+        "task": "Okay, the peers that we do not, or I'm sorry, that we do have that item in stock",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 25,
+        "task": "Okay, Karen's boutique at the Hunter Mall, is that close by? It is, it's right by my office",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 26,
+        "task": "Okay, what is your name, sir? Charlie Johnson",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 27,
+        "task": "Charlie Johnson, is that J",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 28,
+        "task": "Mr both both botho both both still both both had both both this only had only both both only only botho money both only both still had had botho had both only had still both still only only only hado ",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "00fd71ad-8e88-4bde-948f-2be42290d204",
+    "submitted_at": "2026-08-04T17:53:27.944601",
+    "status": "Pending Human Review",
+    "total_items": 22,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "My name is Will and I talk about the how how do we use the APIs",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.7999999999999999,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Next question I have here is for Will",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.7999999999999999,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "So for example, there are multiple people here in this meeting and the API will tell you which speaker is speaking at which point of time who spoke what essentially",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.7999999999999999,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 3,
+        "task": "And if the AI model has been trained by the speaker's voice, it can tell you who the person is if you provide a label such as the name the person and then it will tell you, for example, Will is speaki",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.7999999999999999,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 4,
+        "task": "Otherwise, it will just say person a person be person see",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.7999999999999999,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 5,
+        "task": "Extract specific action items, tasks,",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 6,
+        "task": "commitments from this meeting",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 7,
+        "task": "Focus on who needs to do what",
+        "assignee": "who",
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 8,
+        "task": "the API will tell you which speaker is speaking at which point of time who spoke what essentially",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 9,
+        "task": "One, their audio APIs",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 10,
+        "task": "the other set of APIs are based on text",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 11,
+        "task": "the three most popular APIs are you can say the speech to text because even audio gets converted into text",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 12,
+        "task": "then the AI engine gives you the transcript of that",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 13,
+        "task": "then it will tell you, for example, Will is speaking at this time",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 14,
+        "task": "It means if you are in a contact center kind of a use case where supervisor needs to understand what kind of calls are coming in right from all the people around the world to understand the sentiment ",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 15,
+        "task": "I help in articulating the value provided by our open platform",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 16,
+        "task": "the plethora of use cases that can be supported",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 17,
+        "task": "today I have with me to my awesome colleagues",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 18,
+        "task": "we can start by getting them introduced Samir",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 19,
+        "task": "Let's go to the next one",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 20,
+        "task": "I talk about the how how do we use the APIs? How do we integrate them? How do we deploy them go live in our production applications? Awesome",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 21,
+        "task": "Today the topic is about Ring Central's AI had both both both still both both - had both - both both had both had had had - had had both either both both only both both their had both still had had st",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "145dacd2-f25b-453c-b30a-e618daaa42c3",
+    "submitted_at": "2026-08-04T18:01:26.604935",
+    "status": "Pending Human Review",
+    "total_items": 20,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "My name is Will and I talk about the how how do we use the APIs",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.7999999999999999,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Next question I have here is for Will",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.7999999999999999,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "So for example, there are multiple people here in this meeting and the API will tell you which speaker is speaking at which point of time who spoke what essentially",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.7999999999999999,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 3,
+        "task": "And if the AI model has been trained by the speaker's voice, it can tell you who the person is if you provide a label such as the name the person and then it will tell you, for example, Will is speaki",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.7999999999999999,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 4,
+        "task": "Otherwise, it will just say person a person be person see",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.7999999999999999,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 5,
+        "task": "Extract specific action items, tasks,",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 6,
+        "task": "commitments from this meeting",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 7,
+        "task": "Focus on who needs to do what",
+        "assignee": "who",
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 8,
+        "task": "both still still both still both both still only both still had both both both only both both had both still one both still always both still all both still S both both always both both all still both",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 9,
+        "task": "today I have with me to my awesome colleagues",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 10,
+        "task": "we can start by getting them introduced Samir",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 11,
+        "task": "I help in articulating the value provided by our open platform",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 12,
+        "task": "the plethora of use cases that can be supported",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 13,
+        "task": "Let's go to the next one",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 14,
+        "task": "I talk about the how how do we use the APIs? How do we integrate them? How do we deploy them go live in our production applications? Awesome",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 15,
+        "task": "Today the topic is about Ring Central's AI APIs around conversational intelligence",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 16,
+        "task": "So let's get started",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 17,
+        "task": "Question for Samir",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 18,
+        "task": "AI is very highly used acronym over the past 45 years, especially",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 19,
+        "task": "How do you understand it in context of conve Oneo One One one Oneooo had One Oneo one One One One had One had one had had One oneoo One hado Oneo l One one hado hado Money One One l had Oneo Money one",
+        "assignee": null,
+        "deadline": null,
+        "priority": "Medium",
+        "confidence": 0.6,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "47543afc-5289-4513-b6ae-49fdd4d5cd7c",
+    "submitted_at": "2026-08-04T18:33:31.043996",
+    "status": "Pending Human Review",
+    "total_items": 0,
+    "items": []
+  },
+  {
+    "meeting_id": "33fe7060-41a0-41d4-85b6-12e83b0c0f25",
+    "submitted_at": "2026-08-04T19:15:03.881026",
+    "status": "Pending Human Review",
+    "total_items": 0,
+    "items": []
+  },
+  {
+    "meeting_id": "207b9058-1798-4a67-b51f-7b4f9c0f9035",
+    "submitted_at": "2026-08-04T19:42:45.065150",
+    "status": "Pending Human Review",
+    "total_items": 8,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Provide a clear description of AI in the context of conversations",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Explain the capabilities of AI in conversations",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "Discuss the ease of use of AI in conversations",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 3,
+        "task": "Introduce the topic of RingCentral's AI APIs around conversational intelligence",
+        "assignee": "Tom",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 4,
+        "task": "Explain the different set of APIs supported by RingCentral",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 5,
+        "task": "Highlight the three most popular conversational intelligence API use cases across RingCentral's portfolio of API products",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 6,
+        "task": "Discuss the speaker diarization API and its use cases",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 7,
+        "task": "Discuss the speaker identification API and its use cases",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "c6a62ed2-49bd-4bab-985a-63c8813e59af",
+    "submitted_at": "2026-08-04T20:16:25.460859",
+    "status": "Pending Human Review",
+    "total_items": 2,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Check on outdoor furniture",
+        "assignee": "Person A",
+        "deadline": "Later today",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Keep an eye on news for storm updates",
+        "assignee": "Person B",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "2154d2c0-2c3a-4c32-a361-bcc8d3e4f440",
+    "submitted_at": "2026-08-04T21:05:39.962921",
+    "status": "Pending Human Review",
+    "total_items": 3,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Make arrangements with Karen's Boutique for Charlie to exchange the Parker Scarf at no additional cost",
+        "assignee": "Parker Scarves",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Send out a special gift to Charlie to make up for the inconvenience",
+        "assignee": "Parker Scarves",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "Exchange the Parker Scarf at Karen's Boutique",
+        "assignee": "Charlie Johnson",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "b072140e-1ca7-4ce8-b8b9-d9f800a3269e",
+    "submitted_at": "2026-08-04T21:23:17.569339",
+    "status": "Pending Human Review",
+    "total_items": 2,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Make arrangements with Karen's Boutique for exchange",
+        "assignee": "Parker Scarves representative",
+        "deadline": "Not specified",
+        "priority": "High",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Send out a special gift to Charlie Johnson",
+        "assignee": "Parker Scarves representative",
+        "deadline": "Not specified",
+        "priority": "High",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "047d23a0-73be-4a2a-9bcb-641debb273ad",
+    "submitted_at": "2026-08-04T21:24:29.051163",
+    "status": "Pending Human Review",
+    "total_items": 2,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Make arrangements with Karen's Boutique for exchange",
+        "assignee": "Parker Scarves representative",
+        "deadline": "Not specified",
+        "priority": "High",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Send out a special gift to Charlie Johnson",
+        "assignee": "Parker Scarves representative",
+        "deadline": "Not specified",
+        "priority": "High",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "88cf4a6b-a2e0-47d5-88f9-6ecccf5baca6",
+    "submitted_at": "2026-08-04T21:24:44.377711",
+    "status": "Pending Human Review",
+    "total_items": 10,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Provide a clear description of AI in the context of conversations",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Explain the capabilities of AI APIs in conversational intelligence",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "Discuss the ease of use of AI APIs",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 3,
+        "task": "Introduce the topic of RingCentral's AI APIs around conversational intelligence",
+        "assignee": "Tom",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 4,
+        "task": "Explain how to use the APIs, integrate them, and deploy them in production applications",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 5,
+        "task": "Discuss the different set of APIs supported by RingCentral",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 6,
+        "task": "Highlight the three most popular conversational intelligence API use cases across RingCentral's portfolio of API products",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 7,
+        "task": "Provide examples of interaction analysis, sentiment analysis, and emotion analysis using RingCentral's AI APIs",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 8,
+        "task": "Explain how to use the speaker diarization API to identify speakers in a meeting",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 9,
+        "task": "Explain how to use the speaker identification API to detect who is speaking",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "a77b775d-a8e1-4030-bba1-c4b37eaf304d",
+    "submitted_at": "2026-08-04T21:28:14.000368",
+    "status": "Pending Human Review",
+    "total_items": 8,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Provide a clear description of AI in the context of conversations",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Explain the capabilities of AI APIs in conversational intelligence",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "Discuss the ease of use of AI APIs",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 3,
+        "task": "Introduce the topic of RingCentral's AI APIs around conversational intelligence",
+        "assignee": "Tom",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 4,
+        "task": "Explain the different set of APIs supported by RingCentral",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 5,
+        "task": "Highlight the three most popular conversational intelligence API use cases across RingCentral's portfolio of API products",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 6,
+        "task": "Discuss the speaker diarization API and its use cases",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 7,
+        "task": "Discuss the speaker identification API and its use cases",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "b71e104e-d6f8-4ab1-b3a4-c8dfbf5427fd",
+    "submitted_at": "2026-08-04T22:13:11.867498",
+    "status": "Pending Human Review",
+    "total_items": 6,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Implement two-month rotation for department key reviews",
+        "assignee": "Not specified",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Check the taxonomy for MR rates",
+        "assignee": "Eric Johnson",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "Confirm the reasoning behind the wider MR rate",
+        "assignee": "Not specified",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 3,
+        "task": "Review and adjust the MR rates to reflect community contributions",
+        "assignee": "Not specified",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 4,
+        "task": "Monitor and adjust the rotation of department key reviews as needed",
+        "assignee": "Eric Johnson",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 5,
+        "task": "Consider increasing the frequency of department key reviews for larger departments",
+        "assignee": "Eric Johnson",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "8930b44e-117d-4c5d-99ba-c8ce4db89000",
+    "submitted_at": "2026-08-04T22:20:16.308932",
+    "status": "Pending Human Review",
+    "total_items": 7,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Provide a clear description of AI in the context of conversations",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Explain the capabilities of AI APIs in conversational intelligence",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "Discuss the ease of use of AI APIs",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 3,
+        "task": "Introduce the topic of RingCentral's AI APIs around conversational intelligence",
+        "assignee": "Tom",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 4,
+        "task": "Explain the different set of APIs supported by RingCentral",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 5,
+        "task": "Highlight the three most popular conversational intelligence API use cases across RingCentral's portfolio of API products",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 6,
+        "task": "Provide examples of API use cases",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "bd8e36a6-69c1-459f-9d21-c3d3262c6d9f",
+    "submitted_at": "2026-08-04T22:48:56.269973",
+    "status": "Pending Human Review",
+    "total_items": 6,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Implement a two-month rotation for department key reviews",
+        "assignee": "Not specified",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Check the taxonomy for MR rates",
+        "assignee": "Eric Johnson",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "Confirm the reasoning behind the wider MR rate",
+        "assignee": "Eric Johnson",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 3,
+        "task": "Review and adjust the MR rates to reflect community contributions",
+        "assignee": "Not specified",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 4,
+        "task": "Evaluate the effectiveness of the two-month rotation and adjust as needed",
+        "assignee": "Eric Johnson",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 5,
+        "task": "Consider having more frequent key reviews for the largest department",
+        "assignee": "Eric Johnson",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "8b50939a-dffc-4ff8-9f43-8f1f7d4f29ac",
+    "submitted_at": "2026-08-04T22:50:23.413371",
+    "status": "Pending Human Review",
+    "total_items": 9,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Provide a clear description of AI in the context of conversations",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Explain the capabilities of AI APIs in conversational intelligence",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "Discuss the ease of use of AI APIs",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 3,
+        "task": "Introduce the topic of RingCentral's AI APIs around conversational intelligence",
+        "assignee": "Tom",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 4,
+        "task": "Explain how to use the APIs, integrate them, and deploy them in production applications",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 5,
+        "task": "Provide examples of interaction analysis, sentiment analysis, and emotion analysis using AI APIs",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 6,
+        "task": "Discuss the use cases of AI APIs in contact centers",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 7,
+        "task": "Highlight the three most popular conversational intelligence API use cases across RingCentral's portfolio of API products",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 8,
+        "task": "Explain the speech-to-text API, speaker diarization API, and speaker identification API",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "62b01f23-d42d-4d52-aed5-75e08cb9c60e",
+    "submitted_at": "2026-08-04T22:50:55.765114",
+    "status": "Pending Human Review",
+    "total_items": 7,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Provide a clear description of AI in the context of conversations",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Explain the capabilities of AI APIs in conversational intelligence",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "Discuss the ease of use of AI APIs",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 3,
+        "task": "Introduce the topic of RingCentral's AI APIs around conversational intelligence",
+        "assignee": "Tom",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 4,
+        "task": "Explain the different set of APIs supported by RingCentral",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 5,
+        "task": "Highlight the three most popular conversational intelligence API use cases across RingCentral's portfolio of API products",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 6,
+        "task": "Provide examples of API use cases",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "e8bb8cb4-45d9-4409-b45d-c1897a6bb899",
+    "submitted_at": "2026-08-04T23:02:33.730637",
+    "status": "Pending Human Review",
+    "total_items": 3,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Make arrangements with Karen's Boutique for exchange",
+        "assignee": "Parker Scarves",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Exchange Parker Scarf at Karen's Boutique",
+        "assignee": "Charlie Johnson",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "Send special gift to Charlie Johnson",
+        "assignee": "Parker Scarves",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "4b9fb6c8-d483-4242-8e96-1f77fbb4a1ca",
+    "submitted_at": "2026-08-04T23:04:28.146219",
+    "status": "Pending Human Review",
+    "total_items": 6,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Implement a two-month rotation for department key reviews",
+        "assignee": "Not specified",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Check the taxonomy for R&D wider MR rate",
+        "assignee": "Eric Johnson",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "Confirm the reasoning behind R&D wider MR rate",
+        "assignee": "Eric Johnson",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 3,
+        "task": "Review and adjust the R&D wider MR rate to only include external contributions",
+        "assignee": "Not specified",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 4,
+        "task": "Monitor and adjust the frequency of department key reviews based on the two-month rotation",
+        "assignee": "Eric Johnson",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 5,
+        "task": "Evaluate the effectiveness of the two-month rotation and make adjustments as needed",
+        "assignee": "Eric Johnson",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  }
+]

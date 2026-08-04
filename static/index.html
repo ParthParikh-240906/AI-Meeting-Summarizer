@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Summary & Action Tracker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        
+        .card h2 {
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #667eea;
+        }
+        
+        .upload-area {
+            border: 3px dashed #667eea;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: #f8f9ff;
+        }
+        
+        .upload-area:hover {
+            background: #eef0ff;
+            border-color: #764ba2;
+        }
+        
+        .upload-area.drag-over {
+            background: #dde0ff;
+            border-color: #764ba2;
+            transform: scale(1.02);
+        }
+        
+        .upload-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-primary:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+            margin-left: 10px;
+        }
+        
+        .btn-small {
+            padding: 6px 15px;
+            font-size: 12px;
+        }
+        
+        .btn-approve {
+            background: #4caf50;
+            color: white;
+        }
+        
+        .btn-reject {
+            background: #f44336;
+            color: white;
+        }
+        
+        .btn-edit {
+            background: #ff9800;
+            color: white;
+        }
+        
+        #fileInput {
+            display: none;
+        }
+        
+        .progress-container {
+            display: none;
+            margin-top: 20px;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            width: 0%;
+            transition: width 0.3s ease;
+            animation: pulse 1.5s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+        
+        .progress-text {
+            text-align: center;
+            margin-top: 10px;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .results-container {
+            display: none;
+        }
+        
+        .summary-section {
+            margin-bottom: 25px;
+        }
+        
+        .summary-section h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .summary-text {
+            background: #f8f9ff;
+            padding: 15px;
+            border-radius: 8px;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .key-points {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .key-points li {
+            padding: 12px 15px 12px 35px;
+            margin: 8px 0;
+            background: #f8f9ff;
+            border-radius: 8px;
+            position: relative;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        
+        .key-points li::before {
+            content: '';
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 12px;
+            height: 12px;
+            background: #667eea;
+            border-radius: 50%;
+        }
+        
+        .decisions-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .decisions-list li {
+            padding: 8px 15px;
+            margin: 5px 0;
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            border-radius: 4px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        
+        th {
+            background: #667eea;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        tr:hover {
+            background: #f8f9ff;
+        }
+        
+        .priority-high {
+            color: #f44336;
+            font-weight: bold;
+        }
+        
+        .priority-medium {
+            color: #ff9800;
+            font-weight: bold;
+        }
+        
+        .priority-low {
+            color: #4caf50;
+            font-weight: bold;
+        }
+        
+        .status-badge {
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .status-pending {
+            background: #fff3e0;
+            color: #ff9800;
+        }
+        
+        .status-approved {
+            background: #e8f5e9;
+            color: #4caf50;
+        }
+        
+        .status-rejected {
+            background: #ffebee;
+            color: #f44336;
+        }
+        
+        .confidence-bar {
+            width: 60px;
+            height: 6px;
+            background: #e0e0e0;
+            border-radius: 3px;
+            display: inline-block;
+            margin-left: 8px;
+        }
+        
+        .confidence-fill {
+            height: 100%;
+            background: #667eea;
+            border-radius: 3px;
+        }
+        
+        .review-panel {
+            background: #fff8e1;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border: 2px solid #ff9800;
+        }
+        
+        .editable {
+            border: 1px dashed #ccc;
+            padding: 4px 8px;
+            border-radius: 4px;
+            cursor: text;
+        }
+        
+        .editable:focus {
+            border-color: #667eea;
+            outline: none;
+            background: #f8f9ff;
+        }
+        
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .tab {
+            padding: 10px 20px;
+            background: #f0f0f0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .tab.active {
+            background: #667eea;
+            color: white;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .info-item {
+            background: #f8f9ff;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .info-label {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+        }
+        
+        .info-value {
+            font-size: 18px;
+            font-weight: bold;
+            color: #667eea;
+            margin-top: 5px;
+        }
+        
+        .error-message {
+            background: #ffebee;
+            color: #c62828;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            display: none;
+        }
+        
+        .success-message {
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .card {
+                padding: 15px;
+            }
+            
+            table {
+                font-size: 12px;
+            }
+            
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🎙️ Meeting Summary & Action Tracker</h1>
+            <p>AI-Powered | 100% Free | All Models Run Locally</p>
+        </div>
+
+        <!-- Upload Card -->
+        <div class="card" id="uploadCard">
+            <h2>📤 Upload Meeting Recording</h2>
+            
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">🎵</div>
+                <h3>Drag & Drop your meeting audio here</h3>
+                <p>or click to browse</p>
+                <p style="font-size: 12px; color: #999; margin-top: 10px;">
+                    Supported: MP3, WAV, M4A, OGG (Max 50MB)
+                </p>
+            </div>
+            
+            <input type="file" id="fileInput" accept="audio/*,.mp3,.wav,.m4a,.ogg,.webm">
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <button class="btn btn-primary" id="processBtn" disabled>
+                    ⚡ Process Meeting
+                </button>
+                <button class="btn btn-secondary" id="clearBtn" style="display: none;">
+                    Clear
+                </button>
+            </div>
+            
+            <div id="fileName" style="text-align: center; margin-top: 10px; color: #667eea; font-weight: 600;"></div>
+            
+            <!-- Progress -->
+            <div class="progress-container" id="progressContainer">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-text" id="progressText">Processing...</div>
+            </div>
+            
+            <!-- Messages -->
+            <div class="error-message" id="errorMessage"></div>
+            <div class="success-message" id="successMessage"></div>
+        </div>
+
+        <!-- Results Card -->
+        <div class="card results-container" id="resultsCard">
+            <h2>📊 Meeting Analysis Results</h2>
+            
+            <!-- Info Grid -->
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="info-label">Duration</div>
+                    <div class="info-value" id="meetingDuration">--</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Participants</div>
+                    <div class="info-value" id="meetingParticipants">--</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Action Items</div>
+                    <div class="info-value" id="actionItemCount">--</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Review Status</div>
+                    <div class="info-value" style="color: #ff9800;">⏳ Pending</div>
+                </div>
+            </div>
+
+            <div id="audioPlayerContainer" style="margin-bottom: 20px; display: none;">
+                <audio id="audioPlayer" controls style="width: 100%; border-radius: 8px;">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            
+            <!-- Tabs -->
+            <div class="tabs">
+                <div class="tab active" onclick="switchTab('summary')">📝 Summary</div>
+                <div class="tab" onclick="switchTab('actions')">✅ Action Items</div>
+                <div class="tab" onclick="switchTab('decisions')">🎯 Decisions</div>
+                <div class="tab" onclick="switchTab('transcript')">📄 Transcript</div>
+            </div>
+            
+            <!-- Summary Tab -->
+            <div class="tab-content active" id="tab-summary">
+                <div class="summary-section">
+                    <h3>📋 Executive Summary</h3>
+                    <div class="summary-text" id="summaryText"></div>
+                </div>
+                
+                <div class="summary-section">
+                    <h3>🔑 Key Points</h3>
+                    <ul class="key-points" id="keyPointsList"></ul>
+                </div>
+            </div>
+            
+            <!-- Actions Tab -->
+            <div class="tab-content" id="tab-actions">
+                <div class="review-panel">
+                    <strong>⚠️ Human Review Required</strong> - Please verify and approve each action item below.
+                </div>
+                
+                <table id="actionItemsTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Task</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="actionItemsBody">
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Decisions Tab -->
+            <div class="tab-content" id="tab-decisions">
+                <h3>✅ Decisions Made</h3>
+                <ul class="decisions-list" id="decisionsList"></ul>
+            </div>
+            
+            <!-- Transcript Tab -->
+            <div class="tab-content" id="tab-transcript">
+                <h3>📄 Full Transcript</h3>
+                <div class="summary-text" id="fullTranscript"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let selectedFile = null;
+        let currentSummary = null;
+        let lastProcessTime = 0;
+        let isProcessing = false;
+        const COOLDOWN_SECONDS = 3;
+
+        const uploadArea = document.getElementById('uploadArea');
+        const fileInput = document.getElementById('fileInput');
+        const processBtn = document.getElementById('processBtn');
+        const clearBtn = document.getElementById('clearBtn');
+        const fileName = document.getElementById('fileName');
+        const progressContainer = document.getElementById('progressContainer');
+        const progressFill = document.getElementById('progressFill');
+        const progressText = document.getElementById('progressText');
+        const errorMessage = document.getElementById('errorMessage');
+        const successMessage = document.getElementById('successMessage');
+        const resultsCard = document.getElementById('resultsCard');
+
+        uploadArea.addEventListener('click', () => fileInput.click());
+
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('drag-over');
+        });
+
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('drag-over');
+        });
+
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('drag-over');
+            if (e.dataTransfer.files.length > 0) {
+                handleFileSelect(e.dataTransfer.files[0]);
+            }
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                handleFileSelect(e.target.files[0]);
+            }
+        });
+
+        function handleFileSelect(file) {
+            const validExtensions = ['.mp3', '.wav', '.m4a', '.ogg', '.webm'];
+            const fileExt = '.' + file.name.split('.').pop().toLowerCase();
+            
+            if (!validExtensions.includes(fileExt)) {
+                showError('Invalid file type. Please upload MP3, WAV, M4A, or OGG files.');
+                return;
+            }
+            
+            if (file.size > 50 * 1024 * 1024) {
+                showError('File too large. Maximum size is 50MB.');
+                return;
+            }
+            
+            if (file.size < 1 * 1024 * 1024) {
+                showError('File too small. Minimum size is 1MB (about 30 seconds of audio).');
+                return;
+            }
+            
+            // ⬇️ ADD THIS WARNING ⬇️
+            if (file.size > 25 * 1024 * 1024) {
+                showSuccess('⚠️ Large file detected! Processing may take 2-5 minutes. Please be patient.');
+            }
+            
+            selectedFile = file;
+            fileName.textContent = `📎 ${file.name} (${(file.size / 1024 / 1024).toFixed(1)} MB)`;
+            processBtn.disabled = false;
+            clearBtn.style.display = 'inline-block';
+            hideMessages();
+        }
+
+        processBtn.addEventListener('click', async () => {
+            if (!selectedFile || isProcessing) return;
+            
+            const now = Date.now();
+            const timeSinceLast = (now - lastProcessTime) / 1000;
+            if (timeSinceLast < COOLDOWN_SECONDS) {
+                showError(`Please wait ${Math.ceil(COOLDOWN_SECONDS - timeSinceLast)} seconds between uploads.`);
+                return;
+            }
+            
+            isProcessing = true;
+            lastProcessTime = now;
+            processBtn.disabled = true;
+            processBtn.textContent = '⏳ Processing...';
+            progressContainer.style.display = 'block';
+            resultsCard.style.display = 'none';
+            hideMessages();
+            
+            let progress = 0;
+            const progressInterval = setInterval(() => {
+                progress += Math.random() * 10;
+                if (progress > 90) progress = 90;
+                progressFill.style.width = progress + '%';
+            }, 500);
+            
+            // Check if large file
+            if (selectedFile.size > 25 * 1024 * 1024) {
+                progressText.textContent = '🎙️ Processing large file with local Whisper... This may take a few minutes.';
+            } else {
+                progressText.textContent = '🎙️ Transcribing with Groq AI...';
+            }
+            
+            try {
+                const formData = new FormData();
+                formData.append('file', selectedFile);
+                
+                const response = await fetch('/process-meeting/', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                clearInterval(progressInterval);
+                
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData.detail || errorData.error || 'Processing failed');
+                }
+                
+                const result = await response.json();
+                
+                progressFill.style.width = '100%';
+                progressText.textContent = '✅ Processing complete!';
+                
+                setTimeout(() => {
+                    progressContainer.style.display = 'none';
+                    displayResults(result);
+                    if (result.review_required) {
+                        showSuccess('Meeting processed! Please review action items below.');
+                    }
+                }, 500);
+                
+            } catch (error) {
+                clearInterval(progressInterval);
+                progressContainer.style.display = 'none';
+                showError(error.message);
+            } finally {
+                isProcessing = false;
+                processBtn.disabled = false;
+                processBtn.textContent = '⚡ Process Meeting';
+            }
+        });
+
+        function displayResults(result) {
+            if (!result.success || !result.summary) {
+                showError('No results to display');
+                return;
+            }
+            
+            currentSummary = result.summary;
+            const summary = result.summary;
+            
+            document.getElementById('meetingDuration').textContent = summary.duration || 'Unknown';
+            const participantCount = (summary.participants && summary.participants.length) || 1;
+            document.getElementById('meetingParticipants').textContent = participantCount;
+            document.getElementById('actionItemCount').textContent = 
+                summary.action_items ? summary.action_items.length : 0;
+            
+            document.getElementById('summaryText').textContent = summary.summary || 'No summary generated';
+            
+            const keyPointsList = document.getElementById('keyPointsList');
+            keyPointsList.innerHTML = '';
+            if (summary.key_points && summary.key_points.length > 0) {
+                summary.key_points.forEach(point => {
+                    const li = document.createElement('li');
+                    li.textContent = point;
+                    keyPointsList.appendChild(li);
+                });
+            } else {
+                keyPointsList.innerHTML = '<li>No key points detected</li>';
+            }
+            
+            const decisionsList = document.getElementById('decisionsList');
+            decisionsList.innerHTML = '<li>No decisions approved yet</li>';
+            
+            const actionBody = document.getElementById('actionItemsBody');
+            actionBody.innerHTML = '';
+            if (summary.action_items && summary.action_items.length > 0) {
+                summary.action_items.forEach((item, index) => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${index + 1}</td>
+                        <td contenteditable="true" class="editable">${item.task || ''}</td>
+                        <td><span class="status-badge status-pending">⏳ Pending</span></td>
+                        <td>
+                            <button class="btn btn-small btn-approve" onclick="approveItem(${index})">✓</button>
+                            <button class="btn btn-small btn-reject" onclick="rejectItem(${index})">✗</button>
+                        </td>
+                    `;
+                    actionBody.appendChild(row);
+                });
+            } else {
+                actionBody.innerHTML = '<tr><td colspan="4" style="text-align:center;">No action items detected</td></tr>';
+            }
+            
+            document.getElementById('fullTranscript').textContent = 
+                summary.full_transcript || 'Transcript not available';
+            
+            resultsCard.style.display = 'block';
+            resultsCard.scrollIntoView({ behavior: 'smooth' });
+
+            // Show audio player if we have the file
+            if (selectedFile) {
+                const audioContainer = document.getElementById('audioPlayerContainer');
+                const audioPlayer = document.getElementById('audioPlayer');
+                const audioURL = URL.createObjectURL(selectedFile);
+                audioPlayer.src = audioURL;
+                audioContainer.style.display = 'block';
+            }
+        }
+
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            
+            document.getElementById('tab-' + tabName).classList.add('active');
+            document.querySelectorAll('.tab').forEach(tab => {
+                if (tab.textContent.toLowerCase().includes(tabName)) {
+                    tab.classList.add('active');
+                }
+            });
+        }
+
+        function approveItem(index) {
+            const row = document.querySelectorAll('#actionItemsBody tr')[index];
+            if (!row) return;
+            row.cells[2].innerHTML = '<span class="status-badge status-approved">✓ Approved</span>';
+            updateReviewStatus();
+        }
+
+        function rejectItem(index) {
+            const row = document.querySelectorAll('#actionItemsBody tr')[index];
+            if (!row) return;
+            row.cells[2].innerHTML = '<span class="status-badge status-rejected">✗ Rejected</span>';
+            updateReviewStatus();
+        }
+        
+        function updateReviewStatus() {
+            const allRows = document.querySelectorAll('#actionItemsBody tr');
+            let approvedCount = 0;
+            let rejectedCount = 0;
+            let pendingCount = 0;
+            
+            allRows.forEach(row => {
+                const statusCell = row.cells[2];
+                if (statusCell) {
+                    const text = statusCell.textContent.trim();
+                    if (text.includes('Approved')) approvedCount++;
+                    else if (text.includes('Rejected')) rejectedCount++;
+                    else pendingCount++;
+                }
+            });
+            
+            const totalItems = allRows.length;
+            const reviewStatusEl = document.querySelector('#resultsCard .info-grid .info-item:last-child .info-value');
+            
+            if (totalItems === 0) {
+                reviewStatusEl.textContent = '✅ Done';
+                reviewStatusEl.style.color = '#4caf50';
+            } else if (pendingCount > 0) {
+                reviewStatusEl.textContent = '⏳ Pending';
+                reviewStatusEl.style.color = '#ff9800';
+            } else if (rejectedCount === totalItems) {
+                reviewStatusEl.textContent = '❌ All Rejected';
+                reviewStatusEl.style.color = '#f44336';
+            } else if (approvedCount === totalItems) {
+                reviewStatusEl.textContent = '✅ All Approved';
+                reviewStatusEl.style.color = '#4caf50';
+            } else {
+                reviewStatusEl.textContent = '⚠️ Mixed';
+                reviewStatusEl.style.color = '#ff9800';
+            }
+            
+            // Update decisions tab
+            const decisionsList = document.getElementById('decisionsList');
+            decisionsList.innerHTML = '';
+            
+            allRows.forEach(row => {
+                const statusCell = row.cells[2];
+                if (statusCell && statusCell.textContent.includes('Approved')) {
+                    const taskText = row.cells[1].textContent;
+                    const li = document.createElement('li');
+                    li.textContent = '✓ Approved: ' + taskText;
+                    decisionsList.appendChild(li);
+                }
+            });
+            
+            if (decisionsList.children.length === 0) {
+                decisionsList.innerHTML = '<li>No decisions approved yet</li>';
+            }
+        }
+
+        clearBtn.addEventListener('click', () => {
+            selectedFile = null;
+            currentSummary = null;
+            fileInput.value = '';
+            fileName.textContent = '';
+            processBtn.disabled = true;
+            clearBtn.style.display = 'none';
+            resultsCard.style.display = 'none';
+
+            // Clean up audio player
+            const audioPlayer = document.getElementById('audioPlayer');
+            if (audioPlayer.src) {
+                URL.revokeObjectURL(audioPlayer.src);
+                audioPlayer.src = '';
+            }
+            document.getElementById('audioPlayerContainer').style.display = 'none';
+            
+            // Reset ALL fields
+            document.getElementById('summaryText').textContent = '';
+            document.getElementById('keyPointsList').innerHTML = '';
+            document.getElementById('decisionsList').innerHTML = '';
+            document.getElementById('actionItemsBody').innerHTML = '';
+            document.getElementById('fullTranscript').textContent = '';
+            document.getElementById('meetingDuration').textContent = '--';
+            document.getElementById('meetingParticipants').textContent = '--';
+            document.getElementById('actionItemCount').textContent = '--';
+            
+            // Reset review status
+            const reviewStatusEl = document.querySelector('#resultsCard .info-grid .info-item:last-child .info-value');
+            if (reviewStatusEl) {
+                reviewStatusEl.textContent = '⏳ Pending';
+                reviewStatusEl.style.color = '#ff9800';
+            }
+            
+            hideMessages();
+        });
+
+        function showError(message) {
+            errorMessage.textContent = message;
+            errorMessage.style.display = 'block';
+            successMessage.style.display = 'none';
+            setTimeout(() => { errorMessage.style.display = 'none'; }, 5000);
+        }
+
+        function showSuccess(message) {
+            successMessage.textContent = message;
+            successMessage.style.display = 'block';
+            errorMessage.style.display = 'none';
+            setTimeout(() => { successMessage.style.display = 'none'; }, 5000);
+        }
+
+        function hideMessages() {
+            errorMessage.style.display = 'none';
+            successMessage.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
