@@ -604,6 +604,14 @@
                 showError('Invalid file type. Please upload MP3, WAV, M4A, or OGG files.');
                 return;
             }
+
+            // Check if running on Render (no local Whisper available)
+            const isRender = window.location.hostname.includes('onrender.com');
+
+            if (isRender && file.size > 25 * 1024 * 1024) {
+                showError('Files larger than 25MB are not supported on the cloud demo. Please run the app locally for large files. See GitHub README for instructions.');
+                return;
+            }
             
             if (file.size > 50 * 1024 * 1024) {
                 showError('File too large. Maximum size is 50MB.');
@@ -627,6 +635,8 @@
             hideMessages();
         }
 
+        let abortController = null;
+
         processBtn.addEventListener('click', async () => {
             if (!selectedFile || isProcessing) return;
             
@@ -637,6 +647,7 @@
                 return;
             }
             
+            abortController = new AbortController();
             isProcessing = true;
             lastProcessTime = now;
             processBtn.disabled = true;
@@ -652,7 +663,6 @@
                 progressFill.style.width = progress + '%';
             }, 500);
             
-            // Check if large file
             if (selectedFile.size > 25 * 1024 * 1024) {
                 progressText.textContent = '🎙️ Processing large file with local Whisper... This may take a few minutes.';
             } else {
@@ -665,7 +675,8 @@
                 
                 const response = await fetch('/process-meeting/', {
                     method: 'POST',
-                    body: formData
+                    body: formData,
+                    signal: abortController.signal
                 });
                 
                 clearInterval(progressInterval);
@@ -691,6 +702,9 @@
             } catch (error) {
                 clearInterval(progressInterval);
                 progressContainer.style.display = 'none';
+                if (error.name === 'AbortError') {
+                    return;
+                }
                 showError(error.message);
             } finally {
                 isProcessing = false;
@@ -849,23 +863,23 @@
         }
 
         clearBtn.addEventListener('click', () => {
+            if (abortController) {
+                abortController.abort();
+                abortController = null;
+            }
+            
+            isProcessing = false;
+            progressContainer.style.display = 'none';
+            processBtn.disabled = true;
+            processBtn.textContent = '⚡ Process Meeting';
+            
             selectedFile = null;
             currentSummary = null;
             fileInput.value = '';
             fileName.textContent = '';
-            processBtn.disabled = true;
             clearBtn.style.display = 'none';
             resultsCard.style.display = 'none';
-
-            // Clean up audio player
-            const audioPlayer = document.getElementById('audioPlayer');
-            if (audioPlayer.src) {
-                URL.revokeObjectURL(audioPlayer.src);
-                audioPlayer.src = '';
-            }
-            document.getElementById('audioPlayerContainer').style.display = 'none';
             
-            // Reset ALL fields
             document.getElementById('summaryText').textContent = '';
             document.getElementById('keyPointsList').innerHTML = '';
             document.getElementById('decisionsList').innerHTML = '';
@@ -874,13 +888,6 @@
             document.getElementById('meetingDuration').textContent = '--';
             document.getElementById('meetingParticipants').textContent = '--';
             document.getElementById('actionItemCount').textContent = '--';
-            
-            // Reset review status
-            const reviewStatusEl = document.querySelector('#resultsCard .info-grid .info-item:last-child .info-value');
-            if (reviewStatusEl) {
-                reviewStatusEl.textContent = '⏳ Pending';
-                reviewStatusEl.style.color = '#ff9800';
-            }
             
             hideMessages();
         });

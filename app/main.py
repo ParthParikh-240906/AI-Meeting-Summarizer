@@ -138,6 +138,13 @@ async def process_meeting(file: UploadFile = File(...)):
     except Exception as e:
         print(f"Error processing meeting: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Processing failed: {str(e)}")
+    except Exception as e:
+        error_str = str(e)
+        if "Request Entity Too Large" in error_str or "413" in error_str:
+            raise HTTPException(
+                status_code=413, 
+                detail="File too large for cloud demo (>25MB). Please run locally for large files."
+            )
 
 
 @app.post("/upload-audio/")
