@@ -437,7 +437,7 @@
                 <h3>Drag & Drop your meeting audio here</h3>
                 <p>or click to browse</p>
                 <p style="font-size: 12px; color: #999; margin-top: 10px;">
-                    Supported: MP3, WAV, M4A, OGG (Max 50MB)
+                    Supported: MP3, WAV, M4A, OGG (Max 74MB)
                 </p>
             </div>
             
@@ -606,15 +606,11 @@
             }
 
             // Check if running on Render (no local Whisper available)
-            const isRender = window.location.hostname.includes('onrender.com');
+            const isRender = window.location.hostname.includes('onrender.com')
+            const maxSize = isRender ? 25 * 1024 * 1024 : 74 * 1024 * 1024;
 
             if (isRender && file.size > 25 * 1024 * 1024) {
                 showError('Files larger than 25MB are not supported on the cloud demo. Please run the app locally for large files. See GitHub README for instructions.');
-                return;
-            }
-            
-            if (file.size > 50 * 1024 * 1024) {
-                showError('File too large. Maximum size is 50MB.');
                 return;
             }
             

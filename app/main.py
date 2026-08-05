@@ -34,7 +34,8 @@ app = FastAPI(
     version=APP_VERSION,
     description="AI-powered meeting summarization and action tracking - 100% Free & Local",
     docs_url="/docs",
-    redoc_url="/redoc"
+    redoc_url="/redoc",
+    maximum_request_body_size=100 * 1024 * 1024
 )
 
 # Add CORS middleware

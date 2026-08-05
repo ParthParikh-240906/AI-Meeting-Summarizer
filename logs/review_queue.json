@@ -2832,5 +2832,301 @@
         "modified_by_human": false
       }
     ]
+  },
+  {
+    "meeting_id": "da2ca0e0-a4a9-435f-b584-93861e2b3851",
+    "submitted_at": "2026-08-05T12:47:21.060338",
+    "status": "Pending Human Review",
+    "total_items": 5,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Implement a two-month rotation for department key reviews",
+        "assignee": "Not specified",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Check the taxonomy for MR rates",
+        "assignee": "Eric Johnson",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "Confirm the reasoning behind the wider MR rate",
+        "assignee": "Eric Johnson",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 3,
+        "task": "Review and adjust the MR rates to reflect community contributions",
+        "assignee": "Not specified",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 4,
+        "task": "Monitor and adjust the rotation of department key reviews as needed",
+        "assignee": "Eric Johnson",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "d6da9509-c572-49be-9e2e-0921e2570be6",
+    "submitted_at": "2026-08-05T13:02:53.529038",
+    "status": "Pending Human Review",
+    "total_items": 8,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Work with GTM teams",
+        "assignee": "Not specified",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Connect with GTM teams on Slack and issue",
+        "assignee": "Not specified",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "Get commitment from campaign managers for CUBECON",
+        "assignee": "Not specified",
+        "deadline": "Not specified",
+        "priority": "High",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 3,
+        "task": "Comment on issue with commitment to support CUBECON",
+        "assignee": "Not specified",
+        "deadline": "Not specified",
+        "priority": "High",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 4,
+        "task": "Help Corp events team track down attendees",
+        "assignee": "Not specified",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 5,
+        "task": "Add SOMI link to product announcements",
+        "assignee": "Not specified",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 6,
+        "task": "Clarify time frame for product announcements",
+        "assignee": "Not specified",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 7,
+        "task": "Research interplay between product announcements and GILAP14 lunch",
+        "assignee": "Not specified",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "69021bc7-4778-4b8f-a94d-135e0c4e1de8",
+    "submitted_at": "2026-08-05T13:14:54.821480",
+    "status": "Pending Human Review",
+    "total_items": 6,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Implement a two-month rotation for department key reviews",
+        "assignee": "Not specified",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Check the taxonomy for R&D wider MR rate",
+        "assignee": "Eric Johnson",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "Confirm the reasoning behind R&D wider MR rate",
+        "assignee": "Eric Johnson",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 3,
+        "task": "Review and adjust the R&D wider MR rate to only include external MRs",
+        "assignee": "Not specified",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 4,
+        "task": "Monitor and adjust the frequency of department key reviews based on the two-month rotation",
+        "assignee": "Eric Johnson",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 5,
+        "task": "Evaluate the effectiveness of the two-month rotation and make adjustments as needed",
+        "assignee": "Eric Johnson",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "d1d11d69-cd1b-4483-9532-02d75b373958",
+    "submitted_at": "2026-08-05T13:33:13.162236",
+    "status": "Pending Human Review",
+    "total_items": 5,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Send updated mock-ups to design team for sign-off",
+        "assignee": "Sarah",
+        "deadline": "Thursday",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Pull performance logs and report back",
+        "assignee": "Mike",
+        "deadline": "Next Monday",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "Email legal and confirm new terms",
+        "assignee": "Priya",
+        "deadline": "This week",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 3,
+        "task": "Prepare budget deck for leadership review",
+        "assignee": "I (speaker)",
+        "deadline": "Wednesday",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 4,
+        "task": "Deploy onboarding fixes",
+        "assignee": "Jason",
+        "deadline": "End of day tomorrow",
+        "priority": "High",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
   }
 ]

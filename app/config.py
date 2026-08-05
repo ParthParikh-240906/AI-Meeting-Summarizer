@@ -40,7 +40,7 @@ ALLOWED_AUDIO_TYPES = [
     "audio/x-wav",
     "audio/m4a", "audio/ogg", "audio/webm"
 ]
-MAX_FILE_SIZE = 50 * 1024 * 1024  # 50MB
+MAX_FILE_SIZE = 74 * 1024 * 1024  # 74MB
 
 # Application settings
 APP_TITLE = "Meeting Summary & Action Tracker"
