@@ -1,2 +1,6 @@
 .env
-venv
+venv/
+__pycache__/
+*.pyc
+logs/*.json
+test_data/*
