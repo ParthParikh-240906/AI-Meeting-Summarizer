@@ -2413,5 +2413,216 @@
         "modified_by_human": false
       }
     ]
+  },
+  {
+    "meeting_id": "27acd6f8-c8ac-49f5-bec7-631d2f6fb0ed",
+    "submitted_at": "2026-08-04T23:44:46.902016",
+    "status": "Pending Human Review",
+    "total_items": 3,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Make arrangements with Karen's Boutique for exchange",
+        "assignee": "Parker Scarves",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Send out a special gift to Charlie Johnson",
+        "assignee": "Parker Scarves",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "Exchange the Parker Scarf at Karen Boutique",
+        "assignee": "Charlie Johnson",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "283fdc12-395a-42dc-b809-8f4be25e3f77",
+    "submitted_at": "2026-08-05T00:40:20.244278",
+    "status": "Pending Human Review",
+    "total_items": 9,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Provide a clear description of AI in the context of conversations",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Explain the capabilities of AI APIs in conversational intelligence",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "Discuss the ease of use of AI APIs",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 3,
+        "task": "Introduce the topic of RingCentral's AI APIs around conversational intelligence",
+        "assignee": "Tom",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 4,
+        "task": "Explain how to use the APIs, integrate them, and deploy them in production applications",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 5,
+        "task": "Discuss the different set of APIs supported by RingCentral",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 6,
+        "task": "Highlight the three most popular conversational intelligence API use cases across RingCentral's portfolio of API products",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 7,
+        "task": "Provide examples of interaction analysis, sentiment analysis, and emotion analysis using RingCentral's AI APIs",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 8,
+        "task": "Explain how to use the speech to text API, speaker diarization API, and speaker identification API",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
+  },
+  {
+    "meeting_id": "a2262b30-5276-42d4-b745-686240954159",
+    "submitted_at": "2026-08-05T00:42:59.997280",
+    "status": "Pending Human Review",
+    "total_items": 5,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Check the taxonomy",
+        "assignee": "Eric Johnson",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Try the two-month rotation for department key reviews",
+        "assignee": "Engineering team",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "Be flexible with the two-month rotation",
+        "assignee": "Engineering team",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 3,
+        "task": "Consider having four meetings a month for the largest department",
+        "assignee": "Eric Johnson",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 4,
+        "task": "See how the two-month rotation goes",
+        "assignee": "Eric Johnson",
+        "deadline": "Not specified",
+        "priority": "Low",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
   }
 ]
