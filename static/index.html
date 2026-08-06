@@ -649,9 +649,7 @@
             }, 500);
             
             if (selectedFile.size > 25 * 1024 * 1024) {
-                progressText.textContent = '🎙️ Processing large file with local Whisper... This may take a few minutes.';
-            } else {
-                progressText.textContent = '🎙️ Transcribing with Groq AI...';
+                progressText.textContent = 'Processing...';
             }
             
             try {
