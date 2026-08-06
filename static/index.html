@@ -609,10 +609,6 @@
             const isRender = window.location.hostname.includes('onrender.com')
             const maxSize = 74 * 1024 * 1024;
 
-            if (isRender && file.size > 25 * 1024 * 1024) {
-                showError('Files larger than 25MB are not supported on the cloud demo. Please run the app locally for large files. See GitHub README for instructions.');
-                return;
-            }
             
             if (file.size < 1 * 1024 * 1024) {
                 showError('File too small. Minimum size is 1MB (about 30 seconds of audio).');
