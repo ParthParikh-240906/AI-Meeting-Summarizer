@@ -3128,5 +3128,119 @@
         "modified_by_human": false
       }
     ]
+  },
+  {
+    "meeting_id": "d8b39e9b-f043-4dfb-8f69-03157d01d4d5",
+    "submitted_at": "2026-08-06T17:42:30.399305",
+    "status": "Pending Human Review",
+    "total_items": 0,
+    "items": []
+  },
+  {
+    "meeting_id": "02d87cf5-d0e5-4909-af26-71cd9b977d42",
+    "submitted_at": "2026-08-06T17:43:20.847831",
+    "status": "Pending Human Review",
+    "total_items": 9,
+    "items": [
+      {
+        "item_id": 0,
+        "task": "Provide a clear description of AI in the context of conversations",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 1,
+        "task": "Explain the capabilities of AI in conversations",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 2,
+        "task": "Explain how easy it is to use AI in conversations",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 3,
+        "task": "Provide examples of interaction analysis, sentiment analysis, and emotion analysis using RingCentral's AI APIs",
+        "assignee": "Samir",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 4,
+        "task": "Explain the different set of APIs supported by RingCentral",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 5,
+        "task": "Highlight the three most popular conversational intelligence API use cases across RingCentral's portfolio of API products",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 6,
+        "task": "Explain the speech to text API and its capabilities",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 7,
+        "task": "Explain the speaker diarization API and its capabilities",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      },
+      {
+        "item_id": 8,
+        "task": "Explain the speaker identification API and its capabilities",
+        "assignee": "Will",
+        "deadline": "Not specified",
+        "priority": "Medium",
+        "confidence": 0.9,
+        "review_status": "Pending",
+        "reviewer_notes": null,
+        "modified_by_human": false
+      }
+    ]
   }
 ]

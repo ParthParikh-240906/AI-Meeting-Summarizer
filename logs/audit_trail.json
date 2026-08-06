@@ -1571,5 +1571,83 @@
     "processing_time_seconds": 0.40602684020996094,
     "error": null,
     "log_id": "20260805133309681299"
+  },
+  {
+    "timestamp": "2026-08-06T17:42:26.301114",
+    "model_used": "whisper-large-v3-turbo",
+    "tool_used": "Groq Whisper Large v3 Turbo",
+    "prompt": "Transcribe meeting audio with timestamps",
+    "input_type": "audio/mpeg",
+    "output_type": "text/transcript",
+    "reviewer_status": "Auto-completed",
+    "confidence_score": 0.95,
+    "processing_time_seconds": 33.30223321914673,
+    "error": null,
+    "log_id": "20260806174226301172"
+  },
+  {
+    "timestamp": "2026-08-06T17:42:28.136752",
+    "model_used": "llama-3.1-8b-instant",
+    "tool_used": "Groq Llama 3.1 8B Instant",
+    "prompt": "Generate meeting summary with key points and decisions",
+    "input_type": "text/transcript",
+    "output_type": "json/summary",
+    "reviewer_status": "Pending Human Review",
+    "confidence_score": 0.85,
+    "processing_time_seconds": 1.8294780254364014,
+    "error": null,
+    "log_id": "20260806174228136783"
+  },
+  {
+    "timestamp": "2026-08-06T17:42:28.933819",
+    "model_used": "llama-3.1-8b-instant",
+    "tool_used": "Groq Llama 3.1 8B Instant",
+    "prompt": "Extract action items with assignees, deadlines, and priorities",
+    "input_type": "text/transcript",
+    "output_type": "json/action_items",
+    "reviewer_status": "Pending Human Review",
+    "confidence_score": 0.85,
+    "processing_time_seconds": 0.7929589748382568,
+    "error": null,
+    "log_id": "20260806174228933840"
+  },
+  {
+    "timestamp": "2026-08-06T17:43:19.133905",
+    "model_used": "whisper-large-v3-turbo",
+    "tool_used": "Groq Whisper Large v3 Turbo",
+    "prompt": "Transcribe meeting audio with timestamps",
+    "input_type": "audio/mpeg",
+    "output_type": "text/transcript",
+    "reviewer_status": "Auto-completed",
+    "confidence_score": 0.95,
+    "processing_time_seconds": 1.6098849773406982,
+    "error": null,
+    "log_id": "20260806174319133925"
+  },
+  {
+    "timestamp": "2026-08-06T17:43:20.053730",
+    "model_used": "llama-3.1-8b-instant",
+    "tool_used": "Groq Llama 3.1 8B Instant",
+    "prompt": "Generate meeting summary with key points and decisions",
+    "input_type": "text/transcript",
+    "output_type": "json/summary",
+    "reviewer_status": "Pending Human Review",
+    "confidence_score": 0.85,
+    "processing_time_seconds": 0.914884090423584,
+    "error": null,
+    "log_id": "20260806174320053752"
+  },
+  {
+    "timestamp": "2026-08-06T17:43:20.670781",
+    "model_used": "llama-3.1-8b-instant",
+    "tool_used": "Groq Llama 3.1 8B Instant",
+    "prompt": "Extract action items with assignees, deadlines, and priorities",
+    "input_type": "text/transcript",
+    "output_type": "json/action_items",
+    "reviewer_status": "Pending Human Review",
+    "confidence_score": 0.85,
+    "processing_time_seconds": 0.6127438545227051,
+    "error": null,
+    "log_id": "20260806174320670801"
   }
 ]

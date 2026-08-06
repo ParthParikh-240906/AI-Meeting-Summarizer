@@ -77,7 +77,7 @@ class MeetingPipeline:
             # Log step 1
             self.logger.log_processing_step(
                 model_used=self.transcriber.model_name,
-                tool_used="Groq Whisper Large v3 Turbo" if transcription_result.get("method") == "groq_cloud" else "Local Whisper base",
+                tool_used="Groq Whisper Large v3 Turbo",
                 prompt="Transcribe meeting audio with timestamps",
                 input_type="audio/mpeg",
                 output_type="text/transcript",
@@ -199,7 +199,7 @@ class MeetingPipeline:
             metadata = MeetingMetadata(
                 filename=Path(audio_file_path).name,
                 duration_seconds=transcription_result.get("duration", 0),
-                transcription_model="Groq Whisper Large v3 Turbo" if transcription_result.get("method") == "groq_cloud" else "Local Whisper base",
+                transcription_model="Groq Whisper Large v3 Turbo",
                 summarization_model=self.summarizer.model_name,
                 processed_at=datetime.now().isoformat()
             )
