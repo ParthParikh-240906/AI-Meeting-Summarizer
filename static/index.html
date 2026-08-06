@@ -607,7 +607,7 @@
 
             // Check if running on Render (no local Whisper available)
             const isRender = window.location.hostname.includes('onrender.com')
-            const maxSize = isRender ? 25 * 1024 * 1024 : 74 * 1024 * 1024;
+            const maxSize = 74 * 1024 * 1024;
 
             if (isRender && file.size > 25 * 1024 * 1024) {
                 showError('Files larger than 25MB are not supported on the cloud demo. Please run the app locally for large files. See GitHub README for instructions.');
