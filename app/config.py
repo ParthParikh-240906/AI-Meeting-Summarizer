@@ -38,9 +38,8 @@ REVIEW_QUEUE_FILE = LOGS_DIR / "review_queue.json"
 ALLOWED_AUDIO_TYPES = [
     "audio/mpeg", "audio/mp3", "audio/wav", 
     "audio/x-wav",
-    "audio/m4a", "audio/ogg", "audio/webm"
+    "audio/m4a","audio/x-m4a","audio/ogg", "audio/webm"
 ]
-MAX_FILE_SIZE = 74 * 1024 * 1024  # 74MB
 
 # Application settings
 APP_TITLE = "Meeting Summary & Action Tracker"

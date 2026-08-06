@@ -437,7 +437,7 @@
                 <h3>Drag & Drop your meeting audio here</h3>
                 <p>or click to browse</p>
                 <p style="font-size: 12px; color: #999; margin-top: 10px;">
-                    Supported: MP3, WAV, M4A, OGG (Max 74MB)
+                    Supported: MP3, WAV, M4A, OGG (Max 300MB)
                 </p>
             </div>
             
@@ -607,17 +607,10 @@
 
             // Check if running on Render (no local Whisper available)
             const isRender = window.location.hostname.includes('onrender.com')
-            const maxSize = 74 * 1024 * 1024;
-
             
             if (file.size < 1 * 1024 * 1024) {
                 showError('File too small. Minimum size is 1MB (about 30 seconds of audio).');
                 return;
-            }
-            
-            // ⬇️ ADD THIS WARNING ⬇️
-            if (file.size > 25 * 1024 * 1024) {
-                showSuccess('⚠️ Large file detected! Processing may take 2-5 minutes. Please be patient.');
             }
             
             selectedFile = file;

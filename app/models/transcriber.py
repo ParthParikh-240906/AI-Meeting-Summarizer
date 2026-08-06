@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-GROQ_MAX_FILE_SIZE = 25 * 1024 * 1024  # 25MB per chunk
+GROQ_MAX_FILE_SIZE = 25 * 1024 * 1024
 
 
 class MeetingTranscriber:
@@ -32,13 +32,24 @@ class MeetingTranscriber:
         pass  # API is always ready
     
     def transcribe(self, audio_path: str) -> Dict[str, Any]:
-        """Transcribe audio - chunks if > 25MB"""
-        file_size = os.path.getsize(audio_path)
+        """Transcribe audio - optimizes format, chunks if > 25MB"""
+        from app.utils.file_handler import file_handler
         
-        if file_size <= GROQ_MAX_FILE_SIZE:
-            return self._transcribe_single(audio_path)
-        else:
-            return self._transcribe_chunked(audio_path, file_size)
+        # Optimize audio format first
+        optimized_path = file_handler.optimize_audio(audio_path)
+        file_size = os.path.getsize(optimized_path)
+        
+        if file_size > 74 * 1024 * 1024:
+            raise ValueError(f"File too large ({file_size/1024/1024:.1f}MB). Max 74MB.")
+        
+        try:
+            if file_size <= GROQ_MAX_FILE_SIZE:
+                return self._transcribe_single(optimized_path)
+            else:
+                return self._transcribe_chunked(optimized_path, file_size)
+        finally:
+            if optimized_path != audio_path:
+                os.remove(optimized_path)
     
     def _transcribe_single(self, audio_path: str) -> Dict[str, Any]:
         """Transcribe a single file via Groq"""
@@ -77,7 +88,8 @@ class MeetingTranscriber:
                 subprocess.run([
                     "ffmpeg", "-y", "-i", audio_path,
                     "-ss", str(start_sec), "-t", str(chunk_duration),
-                    "-acodec", "libmp3lame", "-ab", "64k",
+                    "-acodec", "libmp3lame", "-ar", "16000",
+                    "-ab", "32k", "-ac", "1",
                     chunk_path
                 ], capture_output=True)
                 

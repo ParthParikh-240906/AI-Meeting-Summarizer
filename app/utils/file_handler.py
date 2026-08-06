@@ -8,7 +8,8 @@ import uuid
 from pathlib import Path
 from typing import Tuple, Optional
 from datetime import datetime
-from app.config import UPLOAD_DIR, ALLOWED_AUDIO_TYPES, MAX_FILE_SIZE
+from app.config import UPLOAD_DIR, ALLOWED_AUDIO_TYPES
+import subprocess
 
 
 class FileHandler:
@@ -16,6 +17,19 @@ class FileHandler:
     Handles file operations for meeting audio files.
     Validates, saves, and manages cleanup of uploaded files.
     """
+
+    def optimize_audio(self, audio_path: str) -> str:
+        """Convert audio to ideal format: MP3, 16kHz, 32kbps mono"""
+        optimized_path = audio_path.rsplit('.', 1)[0] + '_optimized.mp3'
+        
+        subprocess.run([
+            "ffmpeg", "-y", "-i", audio_path,
+            "-acodec", "libmp3lame", "-ar", "16000",
+            "-ab", "32k", "-ac", "1",
+            optimized_path
+        ], capture_output=True)
+        
+        return optimized_path
     
     def __init__(self, upload_dir: Path = UPLOAD_DIR):
         self.upload_dir = upload_dir
@@ -47,11 +61,6 @@ class FileHandler:
         file_ext = Path(filename).suffix.lower()
         if file_ext not in allowed_extensions:
             return False, f"Invalid file extension: {file_ext}. Allowed: {', '.join(allowed_extensions)}"
-        
-        # Check file size
-        if file_size > MAX_FILE_SIZE:
-            max_mb = MAX_FILE_SIZE / (1024 * 1024)
-            return False, f"File too large: {file_size / (1024 * 1024):.1f}MB. Maximum: {max_mb:.0f}MB"
         
         # Check if file is empty
         if file_size == 0:

@@ -79,6 +79,8 @@ Transcript:
                 items = json.loads(match.group()) if match else []
             
             for item in items:
+                if item.get('priority') not in ['High', 'Medium', 'Low']:
+                    item['priority'] = 'Medium'
                 item['confidence'] = 0.9
                 item['source'] = 'groq-llama'
             
