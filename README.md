@@ -82,5 +82,3 @@ GET  /statistics/         - System statistics
 - 3-second cooldown between uploads prevents context leakage
 - All AI output requires human review before finalizing
 - No local models needed - everything runs on Groq Cloud
-
-Built for Elchai Group Pre Interview Assessment - August 2026
