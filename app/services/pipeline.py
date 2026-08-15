@@ -2,11 +2,15 @@
 Processing Pipeline Service
 Orchestrates the complete workflow: Transcription → Summarization → Action Extraction
 """
+import re
 import time
 import uuid
+import json
+import os
 from datetime import datetime
 from typing import Dict, Any, Optional
 from pathlib import Path
+from groq import Groq
 
 from app.models.transcriber import MeetingTranscriber
 from app.models.summarizer import MeetingSummarizer
@@ -33,9 +37,9 @@ class MeetingPipeline:
         self.logger = audit_logger
         
         print("Meeting Pipeline initialized")
-        print(f"  - Transcriber: whisper-base (local)")
-        print(f"  - Summarizer: facebook/bart-large-cnn (local)")
-        print(f"  - Action Extractor: Hybrid NLP + Regex (local)")
+        print(f"  - Transcriber: {self.transcriber.model_name}")
+        print(f"  - Summarizer: {self.summarizer.model_name}")
+        print(f"  - Action Extractor: {self.action_extractor.model_name}")
     
     async def process_meeting(self, audio_file_path: str) -> ProcessingResponse:
         """
@@ -95,6 +99,14 @@ class MeetingPipeline:
             
             if audio_duration < 30 or transcript_length < 200:  # Less than 30 sec or 200 chars
                 print("⚠️ Audio too short - skipping AI analysis")
+
+                metadata = MeetingMetadata(
+                    filename=Path(audio_file_path).name,
+                    duration_seconds=audio_duration,
+                    transcription_model="Groq Whisper Large v3 Turbo",
+                    summarization_model="skipped",
+                    processed_at=datetime.now().isoformat()
+                )
                 
                 meeting_summary = MeetingSummary(
                     id=meeting_id,
@@ -133,7 +145,7 @@ class MeetingPipeline:
             # Log step 2
             self.logger.log_processing_step(
                 model_used=self.summarizer.model_name,
-                tool_used="Groq Llama 3.1 8B Instant",
+                tool_used="Groq GPT-OSS 20B",
                 prompt="Generate meeting summary with key points and decisions",
                 input_type="text/transcript",
                 output_type="json/summary",
@@ -175,8 +187,8 @@ class MeetingPipeline:
             
             # Log step 3
             self.logger.log_processing_step(
-                model_used="llama-3.1-8b-instant",
-                tool_used="Groq Llama 3.1 8B Instant",
+                model_used=self.action_extractor.model_name,
+                tool_used="Groq GPT-OSS 20B",
                 prompt="Extract action items with assignees, deadlines, and priorities",
                 input_type="text/transcript",
                 output_type="json/action_items",
@@ -268,48 +280,63 @@ class MeetingPipeline:
     def _extract_participants(self, transcript: str) -> list:
         """Extract participant names using Groq"""
         try:
-            from groq import Groq
-            import os
-            
             client = Groq(api_key=os.getenv("GROQ_API_KEY"))
-            
+
             response = client.chat.completions.create(
-                model="llama-3.1-8b-instant",
+                model="openai/gpt-oss-20b",
                 messages=[{
                     "role": "user",
                     "content": f"""List ONLY the names of individual PEOPLE speaking in this conversation.
 Exclude company names, brand names, and business names.
-Return as JSON array of strings, like: ["FirstName LastName"]
+Return ONLY a JSON array of strings, like: ["FirstName LastName"]
+No markdown, no explanation.
 
 If you can't identify individual people, return ["Speaker 1"].
 
 Transcript:
 {transcript[:2000]}"""
                 }],
-                temperature=0.1,
-                max_tokens=100
+                temperature=0.3,
+                max_completion_tokens=512,
+                reasoning_effort="low",
             )
-            
-            import json
-            text = response.choices[0].message.content.strip()
-            
+
+            message = response.choices[0].message
+            text = (getattr(message, "content", None) or "").strip()
+            if not text:
+                text = (getattr(message, "reasoning", None) or "").strip()
+
+            participants = []
             try:
                 participants = json.loads(text)
-            except:
-                match = re.search(r'\[.*\]', text, re.DOTALL)
-                participants = json.loads(match.group()) if match else []
-            
+            except Exception:
+                match = re.search(r"\[.*\]", text, re.DOTALL)
+                if match:
+                    try:
+                        participants = json.loads(match.group())
+                    except Exception:
+                        participants = []
+
+            if not isinstance(participants, list):
+                participants = []
+
             # Filter obvious company/brand names
-            company_words = ['inc', 'corp', 'llc', 'ltd', 'company', 'store', 'shop', 'boutique']
-            filtered = [p for p in participants if not any(cw in p.lower() for cw in company_words)]
-            
+            company_words = [
+                "inc", "corp", "llc", "ltd", "company", "store", "shop", "boutique"
+            ]
+            filtered = [
+                p for p in participants
+                if isinstance(p, str) and not any(cw in p.lower() for cw in company_words)
+            ]
+
             if not filtered:
                 return ["Speaker 1"]
             return filtered[:5]
-            
+
         except Exception as e:
             print(f"Participant extraction error: {str(e)}")
             return ["Speaker 1"]
+
 
     def get_pipeline_info(self) -> Dict[str, Any]:
         """Get information about the pipeline configuration"""
